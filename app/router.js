@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('admin', function(){
+    this.route('new', {path: '/post/new'});
+    this.route('post', {path: '/post/:id'});
+  });
 });
 
 export default Router;

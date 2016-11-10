@@ -1,0 +1,13 @@
+<form {{action 'createNewPost' on='submit'}}>
+
+  <div class="form-group">
+    <label for="title">Post Title</label>
+      {{input id="title" placeholder='Post Title' value=postTitle class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="postContent">Post Content</label>
+    {{textarea id='postContent' placeholder='Start Typing...' value=postContent class="form-control"}}
+  </div>
+  <button class="btn btn-primary" type="submit">Publish</button>
+</form>
+{{outlet}}

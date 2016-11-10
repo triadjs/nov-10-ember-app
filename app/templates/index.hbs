@@ -1,0 +1,18 @@
+{{outlet}}
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      {{#each model as |post|}}
+        <article class="single-in-loop">
+          <h3>{{post.postTitle}}</h3>
+          <span>{{post.created}}</span>
+          <div class="post-content">
+            {{{post.postContent}}}
+          </div>
+        </article>
+      {{/each}}
+    </div>
+  </div>
+</div>

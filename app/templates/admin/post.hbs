@@ -1,0 +1,14 @@
+{{outlet}}
+
+<form {{action 'updatePost' model on='submit'}}>
+  <div class="form-group">
+    <label for="title">Post Title</label>
+      {{input id="title" placeholder='Post Title' value=model.postTitle class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="postContent">Post Content</label>
+    {{textarea id='postContent' placeholder='Start Typing...' value=model.postContent class="form-control"}}
+  </div>
+  <button class="btn btn-primary" type="submit">Update</button>
+  <button class="btn btn-danger pull-right" {{action 'deletePost' model}}>Delete</button>
+</form>

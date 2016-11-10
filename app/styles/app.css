@@ -1,0 +1,34 @@
+
+.single-in-loop{
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid lightcoral;
+}
+
+.post-content{
+  margin-top: 20px;
+}
+
+.admin-post-list li{
+  list-style: none;
+  display: block;
+  height: auto;
+  font-size: 22px;
+  width: 100%;
+  background: #e2e2e2;
+  border-bottom: 1px solid #fff;
+}
+.admin-post-list li a{
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background: #e2e2e2;
+
+}
+.admin-post-list li a:hover{
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background: #fff;
+  text-decoration: none;
+}
